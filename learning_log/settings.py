@@ -143,7 +143,12 @@ if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # Allow all host headers.
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = [
+        '*',
+        "127.0.0.1",
+        "localhost",
+        "learning-log-1-1k7w.onrender.com",
+                     ]
     
     # Static asset configuration
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
